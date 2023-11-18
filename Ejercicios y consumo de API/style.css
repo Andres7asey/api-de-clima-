@@ -1,0 +1,155 @@
+
+body{
+  background-color: black;
+  color: #fff;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  background-image: url(./img/th.jpg);
+}
+
+.Contenedor{
+  background: rgb(5,0,85);
+  background: linear-gradient(58deg, rgba(5,0,85,1) 0%, rgba(9,9,121,1) 46%, rgba(0,212,255,1) 100%);
+  border-radius: 15px;
+  border: black solid 1px;
+  margin: auto;
+  height: 60%;
+  width: 50%;
+  box-shadow: 10px 10px 5px rgb(34, 34, 34);
+  
+}
+
+h1{
+  color: #fff;
+  text-align: center;  
+}
+
+.input{
+  display: flex;
+  border: solid 0.5px gray;
+  border-radius: 15px;
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  padding-left: 7px;
+  padding-right: 7px;
+  box-shadow: 5px 5px 5px rgb(34, 34, 34);
+
+}
+
+#city{
+  align-items: center;
+  width: 80%;
+  height: 28px;
+  outline: none;
+  border-radius: 30px;
+  border: none;
+}
+
+#buttonSearch{
+  background-color: #fff;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 20%;
+  border: none;
+  border-radius: 30px;
+  border-left: solid 1px gray;
+}
+
+#base-loc{
+  height: 52px;
+}
+
+#localizacion{
+  padding-right: 15px;
+  float: right;
+}
+
+#info-clima{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#clima{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#temp-city{
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+
+#sen-caja{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sen-temp{
+  font-size: 30px;
+  padding: 10px;
+}
+
+#lat-lon{
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+#lat{
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.none {
+  display: none !important;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    margin-left: 45%;
+    margin-top: 30px;
+    display: inline-block;
+    position: relative;
+    border-width: 3px 2px 3px 2px;
+    border-style: solid dotted solid dotted;
+    border-color: #de3500 rgba(255, 255, 255,0.3) #0206fb rgba(151, 107, 93, 0.3);
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: 1s rotate linear infinite;
+    
+ }
+ .loader:before , .loader:after{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color:#fff;
+    transform: translate(-10px, 19px) rotate(-35deg);
+  }
+ .loader:after {
+    border-color: #de3500 #0000 #0000 #0000 ;
+    transform: translate(32px, 3px) rotate(-35deg);
+  }
+   @keyframes rotate {
+    100%{    transform: rotate(360deg)}
+  }
+
+.div-p > p{
+  color: white
+}
+
+@media (max-width: 800px) { 
+
+  .Contenedor{
+
+    width: 80%;
+  }
+   
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div class="Contenedor">
+
+      <h1 style="color: white">Api del Clima</h1>
+
+      <div class="input">
+
+        <input type="text" id="city" />
+
+        <button id="buttonSearch">Buscar</button>
+
+      </div>
+
+      <span class="loader none" id="loader"></span>
+
+      <div class="div-p">
+        
+        <div id="base-loc">
+
+          <div id="localizacion">
+
+            <p id="name-city"></p>
+            <p id="name-country"></p>
+  
+          </div>
+
+        </div>
+        
+        <div id="info-clima">
+          <div id="clima">
+
+            <img id="img-icon" alt="" />
+            <p id="weather"></p>
+  
+          </div>
+          
+          <div id="temperatura">
+
+            <p id="temp-city"></p>
+
+            <div id="sen-caja">
+
+              <div id="Texto-Sen"></div>
+              <div id="sen-temp"></div>
+
+            </div>
+
+          </div>
+          
+        </div>
+
+        <div id ="lat-lon">
+
+          <div id="lat"></div>
+          <div id="long"></div>
+
+        </div>
+        
+      </div>
+
+    </div>
+    
+    <script type="module" src="./config/index.js"></script>
+    <script type="module" src="./async/functionjs.js"></script>
+    <script type="module" src="./async/index.js"></script>
+    <!-- <script src="./Promise/index.js"></script> -->
+  </body>
+</html>
